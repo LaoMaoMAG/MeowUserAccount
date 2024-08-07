@@ -13,20 +13,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="首次提交">
-      <change afterPath="$PROJECT_DIR$/src/BaseLib/Email.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserAPI/Controllers/Logon.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserAPI/Controllers/Register.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserAPI/FilePath.cs" afterDir="false" />
+    <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="基础功能">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminAPI/AdminAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminAPI/AdminAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseLib/BaseLib.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseLib/BaseLib.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseLib/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DebugLib/DebugLib.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DebugLib/DebugLib.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DebugTest/DebugTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DebugTest/DebugTest.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAPI/UserAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserAPI/UserAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAPI/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +190,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723006281360</updated>
-      <workItem from="1723006281846" duration="6712000" />
+      <workItem from="1723006281846" duration="10507000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <option name="closed" value="true" />
@@ -219,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723007104437</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="基础功能">
+      <option name="closed" value="true" />
+      <created>1723013430478</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723013430478</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +250,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="首次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="首次提交" />
+    <MESSAGE value="基础功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="基础功能" />
   </component>
 </project>
