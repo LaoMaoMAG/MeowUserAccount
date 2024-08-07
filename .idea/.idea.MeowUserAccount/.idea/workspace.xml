@@ -14,27 +14,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="首次提交">
+      <change afterPath="$PROJECT_DIR$/src/BaseLib/Email.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserAPI/Controllers/Logon.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserAPI/Controllers/Register.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserAPI/FilePath.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdminAPI/AdminAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminAPI/AdminAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseLib/BaseLib.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseLib/BaseLib.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseLib/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DebugLib/DebugLib.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DebugLib/DebugLib.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DebugTest/DebugTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DebugTest/DebugTest.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserAPI/UserAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserAPI/UserAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserAPI/WeatherForecast.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LaoMaoMAG"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:LaoMaoMAG/MeowUserAccount.git&quot;,
     &quot;accountId&quot;: &quot;9c48c4d5-d113-48d0-a9ee-3a8800f5e50a&quot;
   }
 }</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2kJenQThwC3XzijrhzoVko9MRjF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -177,7 +201,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723006281360</updated>
-      <workItem from="1723006281846" duration="618000" />
+      <workItem from="1723006281846" duration="6712000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <option name="closed" value="true" />
@@ -187,19 +211,40 @@
       <option name="project" value="LOCAL" />
       <updated>1723006805304</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="首次提交">
+      <option name="closed" value="true" />
+      <created>1723007104437</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723007104437</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

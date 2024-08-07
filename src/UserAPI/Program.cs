@@ -1,51 +1,35 @@
 namespace UserAPI;
 
-public class Program
+internal static class Program
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine($"操作密钥: {BaseLib.OperationKey.Key}");
+        
+        StartServer(args);
+    }
+
+    private static void StartServer(string[] args)
+    {
         var builder = WebApplication.CreateBuilder(args);
-
-        // Add services to the container.
+        // 添加控制器服务
+        builder.Services.AddControllers();
+        // 添加其他服务
         builder.Services.AddAuthorization();
-
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+        // 配置 Swagger
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
-
         var app = builder.Build();
-
-        // Configure the HTTP request pipeline.
+        // 配置 HTTP 请求管道
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
             app.UseSwaggerUI();
         }
-
         app.UseHttpsRedirection();
-
         app.UseAuthorization();
-
-        var summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        app.MapGet("/weatherforecast", (HttpContext httpContext) =>
-            {
-                var forecast = Enumerable.Range(1, 5).Select(index =>
-                        new WeatherForecast
-                        {
-                            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                            TemperatureC = Random.Shared.Next(-20, 55),
-                            Summary = summaries[Random.Shared.Next(summaries.Length)]
-                        })
-                    .ToArray();
-                return forecast;
-            })
-            .WithName("GetWeatherForecast")
-            .WithOpenApi();
-
+        app.MapControllers(); // 映射控制器路由
+        app.MapGet("/", () => "Hello, World!");
         app.Run();
     }
 }
