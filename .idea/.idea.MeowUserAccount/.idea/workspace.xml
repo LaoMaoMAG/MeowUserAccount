@@ -13,8 +13,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="基础功能">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="说明文件">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +189,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723006281360</updated>
-      <workItem from="1723006281846" duration="10507000" />
+      <workItem from="1723006281846" duration="10598000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <option name="closed" value="true" />
@@ -216,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723013430478</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="说明文件">
+      <option name="closed" value="true" />
+      <created>1723016829405</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723016829406</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +258,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="首次提交" />
     <MESSAGE value="基础功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="基础功能" />
+    <MESSAGE value="说明文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="说明文件" />
   </component>
 </project>

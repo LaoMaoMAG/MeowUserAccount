@@ -1,5 +1,5 @@
 # MeowUserAccount
-基于 ASP.NET Core 开发的通用Web用户账户及管理系统
+基于 ASP.NET Core API 开发的通用Web用户账户及管理系统
 
 > **本项目的使用对象是没用拿到“人类资格证🧾”猫猫虫们，如果您是一只猫猫虫请给项目点一个🌟Star🌟ヾ(•ω•`)o**
 
