@@ -25,6 +25,16 @@ public class OperationKey
             set => _key = value ?? GenerateKey(_defaultKeyLength);
         }
     }
+
+
+    /// <summary>
+    /// 验证密钥
+    /// </summary>
+    /// <returns></returns>
+    public bool VerificationKey(string key)
+    {
+        return Key == key;
+    }
     
     
     /// <summary>

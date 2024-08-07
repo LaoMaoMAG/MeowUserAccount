@@ -13,8 +13,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="说明文件">
+    <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="添加DanKE123abc开发者">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseLib/OperationKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseLib/OperationKey.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +191,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723006281360</updated>
-      <workItem from="1723006281846" duration="10844000" />
+      <workItem from="1723006281846" duration="11682000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <option name="closed" value="true" />
@@ -231,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723016917035</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加DanKE123abc开发者">
+      <option name="closed" value="true" />
+      <created>1723017164669</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723017164669</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +277,7 @@
     <MESSAGE value="首次提交" />
     <MESSAGE value="基础功能" />
     <MESSAGE value="说明文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="说明文件" />
+    <MESSAGE value="添加DanKE123abc开发者" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加DanKE123abc开发者" />
   </component>
 </project>

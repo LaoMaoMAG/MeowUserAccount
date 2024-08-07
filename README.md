@@ -24,6 +24,10 @@
 - **后端:** ASP.NET Core API
 - **前端:** Node.js
 
+### 数据库
+- **PostgreSQL**
+- **Redis**
+
 ### 版本管理
 - **Git**
 
