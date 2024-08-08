@@ -1,7 +1,7 @@
 using System.Net;
 using System.Net.Mail;
 
-namespace BaseLib;
+namespace BaseLib.SendEmail;
 
 public class Email
 {
@@ -14,7 +14,7 @@ public class Email
     /// </summary>
     public class ServerEmailData
     {
-        //邮箱服务器名称
+        // 邮箱服务器名称
         public string Name { get; set; }
         // 邮件服务器地址
         public string Server { get; set; }
@@ -50,7 +50,7 @@ public class Email
     /// <param name="subject"></param>
     /// <param name="body"></param>
     /// <returns></returns>
-    public bool SendEmail(ServerEmailData serverEmail, string toEmail, string subject, string body)
+    public static bool SendEmail(ServerEmailData serverEmail, string toEmail, string subject, string body)
     {
         try
         {
@@ -82,7 +82,7 @@ public class Email
     /// <summary>
     /// 添加服务器邮箱
     /// </summary>
-    public bool AddServerEmail(string id, ServerEmailData serverEmailData)
+    public static bool AddServerEmail(string id, ServerEmailData serverEmailData)
     {
         try
         {
@@ -98,7 +98,7 @@ public class Email
     /// <summary>
     /// 设置服务器邮箱
     /// </summary>
-    public bool SetServerEmail(string id, ServerEmailData serverEmailData)
+    public static bool SetServerEmail(string id, ServerEmailData serverEmailData)
     {
         try
         {
@@ -114,7 +114,7 @@ public class Email
     /// <summary>
     /// 获取服务器邮箱
     /// </summary>
-    public ServerEmailData? GetServerEmail(string id)
+    public static ServerEmailData? GetServerEmail(string id)
     {
         try
         {
@@ -129,7 +129,7 @@ public class Email
     /// <summary>
     /// 删除服务器邮箱
     /// </summary>
-    public bool DeleteServerEmail(string id)
+    public static bool DeleteServerEmail(string id)
     {
         try
         {
@@ -145,7 +145,7 @@ public class Email
     /// <summary>
     /// 获取服务器邮箱列表
     /// </summary>
-    public string[]? GetServerEmailList()
+    public static string[]? GetServerEmailList()
     {
         try
         {

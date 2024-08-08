@@ -13,10 +13,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="添加DanKE123abc开发者">
+    <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/BaseLib/SendEmail/Template.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseLib/OperationKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseLib/OperationKey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdminAPI/AdminAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminAPI/AdminAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseLib/Email.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseLib/SendEmail/Email.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseLib/FilePath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseLib/FilePath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DebugTest/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DebugTest/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserAPI/Controllers/Register.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserAPI/Controllers/Register.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserAPI/UserAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserAPI/UserAPI.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,18 +35,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "LaoMaoMAG"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LaoMaoMAG&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:LaoMaoMAG/MeowUserAccount.git&quot;,
     &quot;accountId&quot;: &quot;9c48c4d5-d113-48d0-a9ee-3a8800f5e50a&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Studio/.NET/MeowUserAccount/src/BaseLib/OperationKey.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -53,26 +62,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET 启动设置配置文件.AdminAPI: http.executor": "Run",
+    ".NET 启动设置配置文件.UserAPI: IIS Express.executor": "Run",
+    ".NET 启动设置配置文件.UserAPI: http.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\29016\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\29016\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\29016\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\29016\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\29016\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\29016\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET 启动设置配置文件.UserAPI: IIS Express">
     <configuration name="DebugTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -191,7 +203,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723006281360</updated>
-      <workItem from="1723006281846" duration="11682000" />
+      <workItem from="1723006281846" duration="19274000" />
+      <workItem from="1723112077389" duration="3749000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <option name="closed" value="true" />
@@ -241,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723017164669</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修正">
+      <option name="closed" value="true" />
+      <created>1723018199263</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723018199263</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +299,7 @@
     <MESSAGE value="基础功能" />
     <MESSAGE value="说明文件" />
     <MESSAGE value="添加DanKE123abc开发者" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加DanKE123abc开发者" />
+    <MESSAGE value="修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正" />
   </component>
 </project>

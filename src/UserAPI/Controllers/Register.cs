@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace UserAPI.Controllers;
 
 [ApiController]  
-[Route("register/[controller]")] 
+[Route("register")] 
 public class Register
 {
     /// <summary>
@@ -18,7 +18,7 @@ public class Register
     /// <summary>
     /// 发送验证码
     /// </summary>
-    public void SendVerCode()
+    private void SendVerCode()
     {
         
     }
@@ -26,7 +26,7 @@ public class Register
     /// <summary>
     /// 提交验证码
     /// </summary>
-    public void SubmitVerCode()
+    private void SubmitVerCode()
     {
         
     }
@@ -34,7 +34,7 @@ public class Register
     /// <summary>
     /// 确定注册
     /// </summary>
-    public void OkRegister()
+    private void OkRegister()
     {
         
     }
@@ -42,7 +42,7 @@ public class Register
     /// <summary>
     /// 取消注册
     /// </summary>
-    public void CancelRegister()
+    private void CancelRegister()
     {
         
     }

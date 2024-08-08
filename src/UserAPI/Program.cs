@@ -5,6 +5,14 @@ internal static class Program
     public static void Main(string[] args)
     {
         Console.WriteLine($"操作密钥: {BaseLib.OperationKey.Key}");
+
+        var config = new BaseLib.Config(BaseLib.FilePath.ConfigFilePath, "PostgreSQL");
+        
+        config.Init("Server", "127.0.0.1");
+        config.Init("Port", 5432);
+        config.Init("DbName", "meow_user_account_user");
+        config.Init("UserName", "postgres");
+        config.Init("Password", "laomao123456");
         
         StartServer(args);
     }
