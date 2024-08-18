@@ -1,4 +1,4 @@
-namespace BaseLib;
+namespace MeowUserAccount.UserAPI;
 
 public class FilePath
 {

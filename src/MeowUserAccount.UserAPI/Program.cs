@@ -1,12 +1,12 @@
-namespace UserAPI;
+namespace MeowUserAccount.UserAPI;
 
-internal static class Program
+public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine($"操作密钥: {BaseLib.OperationKey.Key}");
-
-        var config = new BaseLib.Config(BaseLib.FilePath.ConfigFilePath, "PostgreSQL");
+        // Console.WriteLine($"操作密钥: {MeowTools.WebUtility.OperationKey.Key}");
+        
+        var config = new MeowTools.ConfigDB(FilePath.ConfigFilePath, "PostgreSQL");
         
         config.Init("Server", "127.0.0.1");
         config.Init("Port", 5432);

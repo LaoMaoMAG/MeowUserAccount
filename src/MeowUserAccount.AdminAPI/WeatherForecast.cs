@@ -1,4 +1,4 @@
-namespace AdminAPI;
+namespace MeowUserAccount.AdminAPI;
 
 public class WeatherForecast
 {

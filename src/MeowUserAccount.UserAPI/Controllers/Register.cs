@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace UserAPI.Controllers;
+namespace MeowUserAccount.UserAPI.Controllers;
 
 [ApiController]  
 [Route("register")] 

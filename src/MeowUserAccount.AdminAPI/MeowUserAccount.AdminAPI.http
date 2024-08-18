@@ -1,0 +1,6 @@
+@MeowUserAccount.AdminAPI_HostAddress = http://localhost:5067
+
+GET {{MeowUserAccount.AdminAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
