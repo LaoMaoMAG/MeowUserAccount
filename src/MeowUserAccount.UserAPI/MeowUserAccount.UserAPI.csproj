@@ -8,12 +8,14 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.7"/>
+        <PackageReference Include="Npgsql" Version="8.0.3" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\MeowTools\src\MeowTools.WebUtility\MeowTools.WebUtility.csproj" />
       <ProjectReference Include="..\..\..\MeowTools\src\MeowTools\MeowTools.csproj" />
+      <ProjectReference Include="..\MeowUserAccount\MeowUserAccount.csproj" />
     </ItemGroup>
 
 </Project>

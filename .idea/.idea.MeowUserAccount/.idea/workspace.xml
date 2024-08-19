@@ -5,6 +5,10 @@
     <projectFile profileName="http">src/AdminAPI/AdminAPI.csproj</projectFile>
     <projectFile profileName="https">src/AdminAPI/AdminAPI.csproj</projectFile>
     <projectFile>src/DebugTest/DebugTest.csproj</projectFile>
+    <projectFile profileName="IIS Express">src/MeowUserAccount.AdminAPI/MeowUserAccount.AdminAPI.csproj</projectFile>
+    <projectFile profileName="http">src/MeowUserAccount.AdminAPI/MeowUserAccount.AdminAPI.csproj</projectFile>
+    <projectFile profileName="https">src/MeowUserAccount.AdminAPI/MeowUserAccount.AdminAPI.csproj</projectFile>
+    <projectFile>src/MeowUserAccount.DebugTest/MeowUserAccount.DebugTest.csproj</projectFile>
     <projectFile profileName="IIS Express">src/MeowUserAccount.UserAPI/MeowUserAccount.UserAPI.csproj</projectFile>
     <projectFile profileName="http">src/MeowUserAccount.UserAPI/MeowUserAccount.UserAPI.csproj</projectFile>
     <projectFile profileName="https">src/MeowUserAccount.UserAPI/MeowUserAccount.UserAPI.csproj</projectFile>
@@ -17,39 +21,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/shelf/_2024_8_7_1_03____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/shelf/___.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/shelf/在变基之前未提交的更改_[更改]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/shelf/在进行更新之前于_2024_8_7_下午1_03_取消提交了更改_[更改]/shelved.patch" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/SqlData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/sql/user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/sql/user_warehouse.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeowUserAccount.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MeowUserAccount.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminAPI/AdminAPI.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminAPI/AdminAPI.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminAPI/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminAPI/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminAPI/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminAPI/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminAPI/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseLib/BaseLib.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseLib/Config.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseLib/FilePath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/FilePath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseLib/OperationKey.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseLib/SendEmail/Email.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseLib/SendEmail/Template.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseLib/Singleton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DebugLib/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DebugLib/DebugLib.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DebugTest/DebugTest.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DebugTest/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAPI/Controllers/Logon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/Logon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAPI/Controllers/Register.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/Register.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAPI/FilePath.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAPI/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAPI/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAPI/UserAPI.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAPI/UserAPI.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAPI/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAPI/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/FilePath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount/FilePath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/MeowUserAccount.UserAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/MeowUserAccount.UserAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount/MeowUserAccount.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount/MeowUserAccount.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +56,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../MeowTools/src/MeowTools.WebUtility/OperationKey.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/MeowUserAccount/FilePath.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -92,6 +73,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;.NET 启动设置配置文件.AdminAPI: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET 启动设置配置文件.MeowUserAccount.AdminAPI: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET 启动设置配置文件.MeowUserAccount.UserAPI: http.executor&quot;: &quot;Run&quot;,
     &quot;.NET 启动设置配置文件.UserAPI: IIS Express.executor&quot;: &quot;Run&quot;,
     &quot;.NET 启动设置配置文件.UserAPI: http.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -112,7 +95,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET 启动设置配置文件.UserAPI: IIS Express">
+  <component name="RunManager" selected=".NET 启动设置配置文件.MeowUserAccount.UserAPI: http">
     <configuration name="DebugTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -122,6 +105,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/src/DebugTest/DebugTest.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="MeowUserAccount.DebugTest" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/src/MeowUserAccount.DebugTest/MeowUserAccount.DebugTest.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -163,6 +164,51 @@
     </configuration>
     <configuration name="AdminAPI: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/AdminAPI/AdminAPI.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="MeowUserAccount.AdminAPI: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/MeowUserAccount.AdminAPI/MeowUserAccount.AdminAPI.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="MeowUserAccount.AdminAPI: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/MeowUserAccount.AdminAPI/MeowUserAccount.AdminAPI.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="MeowUserAccount.AdminAPI: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/MeowUserAccount.AdminAPI/MeowUserAccount.AdminAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -280,7 +326,9 @@
       <workItem from="1723175006883" duration="10304000" />
       <workItem from="1723976128849" duration="21000" />
       <workItem from="1723985938690" duration="2667000" />
-      <workItem from="1724009611873" duration="451000" />
+      <workItem from="1724009611873" duration="2603000" />
+      <workItem from="1724015719346" duration="721000" />
+      <workItem from="1724089418048" duration="944000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <option name="closed" value="true" />
@@ -346,7 +394,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723116163817</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="项目结构调整">
+      <option name="closed" value="true" />
+      <created>1724010225625</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724010225625</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +440,7 @@
     <MESSAGE value="说明文件" />
     <MESSAGE value="添加DanKE123abc开发者" />
     <MESSAGE value="修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正" />
+    <MESSAGE value="项目结构调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目结构调整" />
   </component>
 </project>

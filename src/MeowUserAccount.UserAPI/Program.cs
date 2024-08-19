@@ -4,15 +4,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // Console.WriteLine($"操作密钥: {MeowTools.WebUtility.OperationKey.Key}");
-        
-        var config = new MeowTools.ConfigDB(FilePath.ConfigFilePath, "PostgreSQL");
-        
-        config.Init("Server", "127.0.0.1");
-        config.Init("Port", 5432);
-        config.Init("DbName", "meow_user_account_user");
-        config.Init("UserName", "postgres");
-        config.Init("Password", "laomao123456");
+        Console.WriteLine(SqlData.SqlConnString);
         
         StartServer(args);
     }
