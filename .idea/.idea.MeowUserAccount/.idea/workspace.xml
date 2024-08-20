@@ -21,22 +21,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Login.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Register.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Data/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Models/User/Login.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Models/User/Register.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/User/Login.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/User/Register.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/UserDatabase/Manage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/Jwt.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/Logon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/ImageVerificationCode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/Register.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Login.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Data/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Data/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/MeowUserAccount.UserAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/MeowUserAccount.UserAPI.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/SqlData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/PgSql.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/sql/user.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/sql/user.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/sql/user_warehouse.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/sql/user_warehouse.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +335,7 @@
       <workItem from="1724009611873" duration="2603000" />
       <workItem from="1724015719346" duration="721000" />
       <workItem from="1724089418048" duration="11168000" />
-      <workItem from="1724127099378" duration="10986000" />
+      <workItem from="1724127099378" duration="19462000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <option name="closed" value="true" />
@@ -426,7 +417,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724090619874</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="架构调整">
+      <option name="closed" value="true" />
+      <created>1724143305600</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724143305600</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,6 +465,7 @@
     <MESSAGE value="修正" />
     <MESSAGE value="项目结构调整" />
     <MESSAGE value="user数据表创建SQL语句" />
-    <option name="LAST_COMMIT_MESSAGE" value="user数据表创建SQL语句" />
+    <MESSAGE value="架构调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="架构调整" />
   </component>
 </project>

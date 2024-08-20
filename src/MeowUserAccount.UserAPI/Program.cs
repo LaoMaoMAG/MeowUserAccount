@@ -1,3 +1,7 @@
+using System.Runtime.InteropServices.JavaScript;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Npgsql;
 
 namespace MeowUserAccount.UserAPI;
@@ -44,6 +48,32 @@ public class Program
         // 配置 Swagger
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+
+        
+        
+        
+        // 添加 JWT 认证服务
+        builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                    ValidAudience = builder.Configuration["Jwt:Issuer"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                };
+            });
+
+        builder.Services.AddControllers();
+        builder.Services.AddScoped<Services.Jwt>(); // 注册 JWT 服务
+     
+        
+        
+        
         var app = builder.Build();
         // 配置 HTTP 请求管道
         if (app.Environment.IsDevelopment())
@@ -53,9 +83,21 @@ public class Program
         }
 
         app.UseHttpsRedirection();
+        
+        // 使用认证和授权中间件
+        app.UseAuthentication(); // 添加身份验证中间件 要在授权之前认证，这个和[Authorize]特性有关
         app.UseAuthorization();
-        app.MapControllers(); // 映射控制器路由
-        // app.MapGet("/", () => "Hello, World!");
+        
+        // 映射控制器路由
+        app.MapControllers();
+        
+        // 开启服务
         app.Run();
+    }
+
+
+    private static void Jwt(WebApplication builder)
+    {
+        
     }
 }

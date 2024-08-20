@@ -1,4 +1,5 @@
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MeowUserAccount.UserAPI.Controllers;
@@ -8,16 +9,24 @@ namespace MeowUserAccount.UserAPI.Controllers;
 [ApiController]
 public class Login : ControllerBase
 {
+    private readonly Services.Jwt _jwtService;
+
+    public Login(Services.Jwt jwtService)
+    {
+        _jwtService = jwtService;
+    }
+    
     [HttpPost("password")]
     public ActionResult PasswordVerification([FromBody] Models.Login request)
     {
         // 实体模型如果有错误返回 404 NotFound
-        if (!ModelState.IsValid) return NotFound();
-
+        if (!ModelState.IsValid) return Unauthorized();
+        
         switch (request.Type)
         {
             case "uuid":
-                return Ok();
+                var token = _jwtService.GenerateToken(request.Id);
+                return Ok(new { Token = token });
             case "uid":
                 return Ok();
             case "email":
@@ -26,9 +35,18 @@ public class Login : ControllerBase
                 return Ok();
         }
 
-        return NotFound();
+        return Unauthorized();
     }
 
+
+    [HttpGet("token")]
+    [Authorize]
+    public ActionResult Token()
+    {
+        var username = User.Identity.Name;
+        return Ok(new { Username = username });
+    }
+    
 
     [HttpPost("verification_code")]
     public void VerificationCode()
