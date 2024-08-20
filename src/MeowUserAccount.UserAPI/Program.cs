@@ -1,5 +1,6 @@
 using System.Runtime.InteropServices.JavaScript;
 using System.Text;
+using MeowUserAccount.UserAPI.Services.User;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Npgsql;
@@ -23,7 +24,7 @@ public class Program
             notes: "备注"
         );
         
-        User.Register.AddUser(
+        Register.AddUser(
             conn: connection,
             databaseId: 1,
             uid: "LaoMaoMAG",
@@ -48,9 +49,6 @@ public class Program
         // 配置 Swagger
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
-
-        
-        
         
         // 添加 JWT 认证服务
         builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -69,10 +67,16 @@ public class Program
             });
 
         builder.Services.AddControllers();
-        builder.Services.AddScoped<Services.Jwt>(); // 注册 JWT 服务
-     
         
+        // 配置 DbConnectionContext 为 Scoped 生命周期
+        builder.Services.AddScoped(serviceProvider => new DbConnectionContext(PgSql.SqlConnString));
         
+        // 注册 JWT 服务
+        builder.Services.AddScoped<Services.Jwt>();
+        
+        // 注册业务逻辑服务
+        builder.Services.AddScoped<Services.User.Register>();
+        builder.Services.AddScoped<Services.User.Login>();
         
         var app = builder.Build();
         // 配置 HTTP 请求管道

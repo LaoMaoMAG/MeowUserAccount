@@ -1,10 +1,18 @@
 using MeowTools.WebUtility;
+using Microsoft.AspNetCore.Mvc;
 using Npgsql;
 
-namespace MeowUserAccount.UserAPI.User;
+namespace MeowUserAccount.UserAPI.Services.User;
 
-public class Register : PgSql
+public class Register : ControllerBase
 {
+    private readonly DbConnectionContext _dbConnectionContext;
+
+    public Register(DbConnectionContext dbConnectionContext)
+    {
+        _dbConnectionContext = dbConnectionContext;
+    }
+    
     /// <summary>
     /// 添加用户
     /// </summary>

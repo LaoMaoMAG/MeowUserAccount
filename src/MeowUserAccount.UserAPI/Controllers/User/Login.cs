@@ -43,8 +43,8 @@ public class Login : ControllerBase
     [Authorize]
     public ActionResult Token()
     {
-        var username = User.Identity.Name;
-        return Ok(new { Username = username });
+        var uuid = User.Identity?.Name;
+        return Ok(new { Username = uuid });
     }
     
 

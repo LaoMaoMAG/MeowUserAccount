@@ -24,6 +24,7 @@
     <ItemGroup>
       <Folder Include="Controllers\Admin\" />
       <Folder Include="Services\Admin\" />
+      <Folder Include="SqlData\" />
     </ItemGroup>
 
 </Project>

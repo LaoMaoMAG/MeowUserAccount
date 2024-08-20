@@ -16,7 +16,7 @@ public class Jwt
         _issuer = configuration["Jwt:Issuer"];
     }
 
-    public string GenerateToken(string username)
+    public string GenerateToken(string uuid)
     {
         var tokenHandler = new JwtSecurityTokenHandler();
         var key = Encoding.UTF8.GetBytes(_secretKey);
@@ -24,9 +24,9 @@ public class Jwt
         {
             Subject = new ClaimsIdentity(new[]
             {
-                new Claim(ClaimTypes.Name, username)
+                new Claim(ClaimTypes.Name, uuid)
             }),
-            Expires = DateTime.UtcNow.AddHours(1), // Token 1小时后过期
+            Expires = DateTime.UtcNow.AddHours(48), // Token 48小时后过期
             Issuer = _issuer,
             Audience = _issuer,
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
