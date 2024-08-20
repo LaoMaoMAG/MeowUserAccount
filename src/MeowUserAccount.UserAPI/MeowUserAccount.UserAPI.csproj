@@ -23,8 +23,7 @@
 
     <ItemGroup>
       <Folder Include="Controllers\Admin\" />
-      <Folder Include="Services\Admin\" />
-      <Folder Include="SqlData\" />
+      <Folder Include="Services\Admin\User\" />
     </ItemGroup>
 
 </Project>

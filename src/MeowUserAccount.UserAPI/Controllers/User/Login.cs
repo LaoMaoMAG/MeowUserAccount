@@ -1,4 +1,5 @@
 using System.IdentityModel.Tokens.Jwt;
+using DanKeJson;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,11 +10,20 @@ namespace MeowUserAccount.UserAPI.Controllers;
 [ApiController]
 public class Login : ControllerBase
 {
+    // JWT 服务
     private readonly Services.Jwt _jwtService;
+    
+    // 数据库上下文
+    private readonly DbConnectionContext _dbConnectionContext;
+    
+    // 注册业务逻辑
+    private readonly Services.User.Login _loginService;
 
-    public Login(Services.Jwt jwtService)
+    public Login(Services.Jwt jwtService, Services.User.Login loginService, DbConnectionContext dbConnectionContext)
     {
         _jwtService = jwtService;
+        _loginService = loginService;
+        _dbConnectionContext = dbConnectionContext;
     }
     
     [HttpPost("password")]
@@ -21,21 +31,13 @@ public class Login : ControllerBase
     {
         // 实体模型如果有错误返回 404 NotFound
         if (!ModelState.IsValid) return Unauthorized();
-        
-        switch (request.Type)
-        {
-            case "uuid":
-                var token = _jwtService.GenerateToken(request.Id);
-                return Ok(new { Token = token });
-            case "uid":
-                return Ok();
-            case "email":
-                return Ok();
-            case "phone":
-                return Ok();
-        }
-
-        return Unauthorized();
+        // 验证用户密码，返回UUID
+        string? uuid = _loginService.PasswordLogin(request.Type, request.Id, request.Password);
+        // 判断用户是否通过验证，未通过返回 401 错误
+        if (uuid == null) return Unauthorized();
+        // 用户通过验证，返回带有UUID的Token
+        var token = _jwtService.GenerateToken(uuid);
+        return Ok(new { Token = token });
     }
 
 

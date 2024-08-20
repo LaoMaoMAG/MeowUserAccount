@@ -4,19 +4,11 @@ using Npgsql;
 
 namespace MeowUserAccount.UserAPI.Services.User;
 
-public class Register : ControllerBase
+public class Register(DbConnectionContext dbConnectionContext) : ControllerBase
 {
-    private readonly DbConnectionContext _dbConnectionContext;
-
-    public Register(DbConnectionContext dbConnectionContext)
-    {
-        _dbConnectionContext = dbConnectionContext;
-    }
-    
     /// <summary>
     /// 添加用户
     /// </summary>
-    /// <param name="conn"></param>
     /// <param name="databaseId"></param>
     /// <param name="uid"></param>
     /// <param name="name"></param>
@@ -26,8 +18,7 @@ public class Register : ControllerBase
     /// <param name="emailState"></param>
     /// <param name="phoneState"></param>
     /// <returns></returns>
-    public static bool AddUser(NpgsqlConnection conn, int databaseId, string uid, string name, string password,
-        string? email, string? phone, int emailState, int phoneState)
+    public bool AddUser(int databaseId, string uid, string name, string password, string? email, string? phone, int emailState, int phoneState)
     {
         // 密码加密
         var salt = Password.GenerateSalt(); // 密码盐
@@ -36,15 +27,14 @@ public class Register : ControllerBase
         try
         {
             // 查询用户库ID是否存在
-            using var cmd = new NpgsqlCommand("SELECT EXISTS(SELECT 1 FROM user_database WHERE id = @userId)", conn);
+            using var cmd = new NpgsqlCommand("SELECT EXISTS(SELECT 1 FROM user_database WHERE id = @userId)", dbConnectionContext.Connection);
             cmd.Parameters.AddWithValue("@userId", databaseId);
             bool exists = Convert.ToBoolean(cmd.ExecuteScalar());
             if (!exists) return false;
 
             // 将用户信息写入数据库
-            var insertSql =
-                "INSERT INTO \"user\" (database_id, uid, name, password, salt, email, phone, email_state, phone_state) VALUES (@warehouse_id, @uid, @name, @password, @salt, @email, @phone, @email_state, @phone_state)";
-            var cmds = new NpgsqlCommand(insertSql, conn);
+            var insertSql = "INSERT INTO \"user\" (database_id, uid, name, password, salt, email, phone, email_state, phone_state) VALUES (@warehouse_id, @uid, @name, @password, @salt, @email, @phone, @email_state, @phone_state)";
+            var cmds = new NpgsqlCommand(insertSql, dbConnectionContext.Connection);
             cmds.Parameters.AddWithValue("@warehouse_id", databaseId);
             cmds.Parameters.AddWithValue("@uid", uid);
             cmds.Parameters.AddWithValue("@name", name);

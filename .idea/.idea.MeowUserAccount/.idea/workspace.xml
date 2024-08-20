@@ -20,19 +20,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="实现了简单的TWJ登录认证">
-      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/DbConnectionContext.cs" afterDir="false" />
+    <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="修正">
+      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Middlewares/AdminVerification.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Models/Admin/Base.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/Admin/AdminUser/Manage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Login.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Register.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Register.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Data/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Models/User/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/MeowUserAccount.UserAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/MeowUserAccount.UserAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Models/User/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Data/Login.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/Jwt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/Jwt.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/User/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/User/Login.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/User/Register.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/User/Register.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount/FilePath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount/FilePath.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +60,10 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../MeowTools/src/MeowTools.WebUtility/OperationKey.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../MeowTools/src/MeowTools.WebUtility/OperationKey.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Login.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Register.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Studio/.NET/MeowUserAccount/src/MeowUserAccount.UserAPI/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Studio/.NET/MeowUserAccount/src/MeowUserAccount.UserAPI/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/MeowUserAccount/FilePath.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -107,6 +107,18 @@
     ]
   }
 }</component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Grunt" flag="true" />
+      <visibility group="Gulp" flag="true" />
+      <visibility group="HTTP Requests" flag="true" />
+      <visibility group="Node.js" flag="true" />
+      <visibility group="Recent projects" flag="true" />
+      <visibility group="Run configurations" flag="true" />
+      <visibility group="npm" flag="true" />
+      <visibility group="yarn" flag="true" />
+    </myKeys>
+  </component>
   <component name="RunManager" selected=".NET 启动设置配置文件.MeowUserAccount.UserAPI: http">
     <configuration name="DebugTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -341,7 +353,7 @@
       <workItem from="1724009611873" duration="2603000" />
       <workItem from="1724015719346" duration="721000" />
       <workItem from="1724089418048" duration="11168000" />
-      <workItem from="1724127099378" duration="24437000" />
+      <workItem from="1724127099378" duration="37645000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <option name="closed" value="true" />
@@ -439,7 +451,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724152894788</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="修正">
+      <option name="closed" value="true" />
+      <created>1724159850178</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1724159850179</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,11 +496,11 @@
     <MESSAGE value="基础功能" />
     <MESSAGE value="说明文件" />
     <MESSAGE value="添加DanKE123abc开发者" />
-    <MESSAGE value="修正" />
     <MESSAGE value="项目结构调整" />
     <MESSAGE value="user数据表创建SQL语句" />
     <MESSAGE value="架构调整" />
     <MESSAGE value="实现了简单的TWJ登录认证" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现了简单的TWJ登录认证" />
+    <MESSAGE value="修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正" />
   </component>
 </project>
