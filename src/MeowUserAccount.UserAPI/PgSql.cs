@@ -3,12 +3,37 @@ using Npgsql;
 
 namespace MeowUserAccount.UserAPI;
 
-public class SqlData
+public class PgSql
 {
-    public static string SqlConnString { get; private set; }
+    public static string SqlConnString { get; set; }
+    public NpgsqlConnection SqlConnection  { get; set; }
     
+    private NpgsqlConnection _sqlConnection;
+    
+    
+    /// <summary>
+    /// 构造方法
+    /// </summary>
+    public PgSql()
+    {
+        SqlConnection = new NpgsqlConnection(SqlConnString);
+        SqlConnection.Open();
+    }
 
-    static SqlData()
+
+    /// <summary>
+    /// 关闭SQL连接
+    /// </summary>
+    public void Close()
+    {
+        SqlConnection.Close();
+    }
+    
+    
+    /// <summary>
+    /// 静态构造
+    /// </summary>
+    static PgSql()
     {
         // 初始化服务器配置
         var configData = new MeowTools.ConfigDB(FilePath.ConfigFilePath, "PostgreSQL");

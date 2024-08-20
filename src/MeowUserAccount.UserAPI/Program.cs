@@ -1,11 +1,36 @@
+using Npgsql;
+
 namespace MeowUserAccount.UserAPI;
 
 public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine(SqlData.SqlConnString);
+        Console.WriteLine(PgSql.SqlConnString);
         
+        
+        NpgsqlConnection connection = new NpgsqlConnection(PgSql.SqlConnString);
+        connection.Open();
+
+        UserDatabase.Manage.Add(
+            conn: connection,
+            name: "aaa",
+            start: 0,
+            notes: "备注"
+        );
+        
+        User.Register.AddUser(
+            conn: connection,
+            databaseId: 1,
+            uid: "LaoMaoMAG",
+            name: "爱打盹的猫",
+            password: "laomao123456",
+            email: "laomaomag@qq.com",
+            phone: "15141543909",
+            emailState: 0,
+            phoneState: 0
+        );
+
         StartServer(args);
     }
 
@@ -26,10 +51,11 @@ public class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }
+
         app.UseHttpsRedirection();
         app.UseAuthorization();
         app.MapControllers(); // 映射控制器路由
-        app.MapGet("/", () => "Hello, World!");
+        // app.MapGet("/", () => "Hello, World!");
         app.Run();
     }
 }

@@ -1,6 +1,6 @@
 namespace MeowUserAccount.UserAPI.Controllers;
 
-public class Logon
+public class EmailVerificationCode
 {
     
 }
