@@ -1,9 +1,8 @@
-using System.IdentityModel.Tokens.Jwt;
-using DanKeJson;
+using MeowUserAccount.UserAPI.Middlewares;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MeowUserAccount.UserAPI.Controllers;
+namespace MeowUserAccount.UserAPI.Controllers.AppExample.User;
 
 
 [Route("api/login")]
@@ -11,15 +10,15 @@ namespace MeowUserAccount.UserAPI.Controllers;
 public class Login : ControllerBase
 {
     // JWT 服务
-    private readonly Services.Jwt _jwtService;
+    private readonly Jwt _jwtService;
     
     // 数据库上下文
     private readonly DbConnectionContext _dbConnectionContext;
     
     // 注册业务逻辑
-    private readonly Services.User.Login _loginService;
+    private readonly Services.AppExample.User.Login _loginService;
 
-    public Login(Services.Jwt jwtService, Services.User.Login loginService, DbConnectionContext dbConnectionContext)
+    public Login(Jwt jwtService, Services.AppExample.User.Login loginService, DbConnectionContext dbConnectionContext)
     {
         _jwtService = jwtService;
         _loginService = loginService;
@@ -27,7 +26,7 @@ public class Login : ControllerBase
     }
     
     [HttpPost("password")]
-    public ActionResult PasswordVerification([FromBody] Models.Login request)
+    public ActionResult PasswordVerification([FromBody] Data.Login request)
     {
         // 实体模型如果有错误返回 404 NotFound
         if (!ModelState.IsValid) return Unauthorized();

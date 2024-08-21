@@ -1,8 +1,8 @@
+using MeowTools.WebUtility;
 using Microsoft.AspNetCore.Mvc;
 using Npgsql;
-using MeowTools.WebUtility;
 
-namespace MeowUserAccount.UserAPI.Services.User;
+namespace MeowUserAccount.UserAPI.Services.AppExample.User;
 
 public class Login(DbConnectionContext dbConnectionContext) : ControllerBase
 {

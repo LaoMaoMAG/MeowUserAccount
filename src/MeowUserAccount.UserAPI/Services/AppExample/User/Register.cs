@@ -2,7 +2,7 @@ using MeowTools.WebUtility;
 using Microsoft.AspNetCore.Mvc;
 using Npgsql;
 
-namespace MeowUserAccount.UserAPI.Services.User;
+namespace MeowUserAccount.UserAPI.Services.AppExample.User;
 
 public class Register(DbConnectionContext dbConnectionContext) : ControllerBase
 {

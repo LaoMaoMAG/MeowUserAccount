@@ -1,31 +1,20 @@
+using Microsoft.AspNetCore.Mvc;
 using Npgsql;
 
-namespace MeowUserAccount.UserAPI.UserDatabase;
+namespace MeowUserAccount.UserAPI.Services;
 
-public class Manage
+public class UserDatabase(DbConnectionContext dbConnectionContext) : ControllerBase
 {
-    private NpgsqlConnection _sqlConnection;
-    
-    public string Id { get; }
-    
-
-    public Manage(NpgsqlConnection sqlConnection, string id)
-    {
-        _sqlConnection = sqlConnection;
-        Id = id;
-    }
-    
-    
     /// <summary>
     /// 添加仓库
     /// </summary>
-    public static bool Add(NpgsqlConnection conn, string name, int start, string notes)
+    public bool Add(string name, int start, string notes)
     {
         try
         {
             // 将用户信息写入数据库
             var insertSql = "INSERT INTO \"user_database\" (name, state, notes) VALUES (@name, @state, @notes)";
-            var cmds = new NpgsqlCommand(insertSql, conn);
+            var cmds = new NpgsqlCommand(insertSql, dbConnectionContext.Connection);
             cmds.Parameters.AddWithValue("@name", name);
             cmds.Parameters.AddWithValue("@state", start);
             cmds.Parameters.AddWithValue("@notes", notes);

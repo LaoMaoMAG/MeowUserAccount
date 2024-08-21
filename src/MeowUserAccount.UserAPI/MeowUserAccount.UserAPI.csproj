@@ -22,8 +22,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\Admin\" />
-      <Folder Include="Services\Admin\User\" />
+      <Folder Include="Controllers\AppExample\" />
+      <Folder Include="Models\AppExample\" />
+      <Folder Include="Services\AppExample\" />
     </ItemGroup>
 
 </Project>

@@ -1,5 +1,7 @@
 using MeowTools.WebUtility;
 using System.Text;
+using MeowUserAccount.UserAPI.Middlewares;
+using MeowUserAccount.UserAPI.Services.AppExample.User;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Npgsql;
@@ -75,11 +77,12 @@ public class Program
         builder.Services.AddScoped(serviceProvider => new DbConnectionContext(PgSql.SqlConnString));
 
         // 注册 JWT 服务
-        builder.Services.AddScoped<Services.Jwt>();
+        builder.Services.AddScoped<Jwt>();
 
         // 注册业务逻辑服务
-        builder.Services.AddScoped<Services.User.Register>();
-        builder.Services.AddScoped<Services.User.Login>();
+        builder.Services.AddScoped<Register>();
+        builder.Services.AddScoped<Login>();
+        builder.Services.AddScoped<Services.UserDatabase>();
 
         var app = builder.Build();
         // 配置 HTTP 请求管道

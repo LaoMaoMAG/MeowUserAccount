@@ -20,18 +20,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="修正">
-      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Middlewares/AdminVerification.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Models/Admin/Base.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/Admin/AdminUser/Manage.cs" afterDir="false" />
+    <list default="true" id="5e9f6012-fbe4-498b-a0f1-41e1f541e570" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/Admin/AppExample.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/Admin/UserDatabase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Models/Admin/AddDatabase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Models/AppExample/User/Register.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MeowUserAccount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Login.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Register.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Register.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/AppExample/User/Login.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/User/Register.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Controllers/AppExample/User/Register.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Data/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Data/Login.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/MeowUserAccount.UserAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/MeowUserAccount.UserAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Models/User/Register.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Models/User/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Models/AppExample/User/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/User/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/User/Login.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/User/Register.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/User/Register.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount/FilePath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount/FilePath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/Admin/AdminUser/Manage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/User/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/AppExample/User/Login.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/User/Register.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/AppExample/User/Register.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/UserDatabase/Manage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeowUserAccount.UserAPI/Services/UserDatabase.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,7 +358,8 @@
       <workItem from="1724009611873" duration="2603000" />
       <workItem from="1724015719346" duration="721000" />
       <workItem from="1724089418048" duration="11168000" />
-      <workItem from="1724127099378" duration="37645000" />
+      <workItem from="1724127099378" duration="38316000" />
+      <workItem from="1724229190430" duration="3796000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <option name="closed" value="true" />
@@ -459,7 +465,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724159850179</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="添加管理员密钥验证中间层">
+      <option name="closed" value="true" />
+      <created>1724174659276</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1724174659276</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,6 +515,7 @@
     <MESSAGE value="架构调整" />
     <MESSAGE value="实现了简单的TWJ登录认证" />
     <MESSAGE value="修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正" />
+    <MESSAGE value="添加管理员密钥验证中间层" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加管理员密钥验证中间层" />
   </component>
 </project>

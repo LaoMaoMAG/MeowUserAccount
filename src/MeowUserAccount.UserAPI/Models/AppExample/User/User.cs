@@ -1,4 +1,4 @@
-namespace MeowUserAccount.UserAPI.Data;
+namespace MeowUserAccount.UserAPI.Models.AppExample.User;
 
 public class User
 {
